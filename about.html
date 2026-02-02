@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sandhya V</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="main">
+    <!-- ================= NAVBAR ================= -->
+    <div class="navbar">
+        <img src="Pic/Logo.png" class="logo" width="100" alt="Logo">
+
+        <!-- Navigation Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mywork.html">My Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right Controls -->
+        <div class="nav-controls">
+            <!-- Dark Mode Toggle -->
+            <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle Dark Mode">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="profile-container">
+            <img src="Pic/profilepic.jpeg" alt="Sandhya V" class="floating-pic">
+        </div>
+
+        <p class="typing">
+            Hi, I’m <strong>Sandhya V</strong>, a passionate
+            <strong>Python Full Stack Developer</strong> with hands-on experience<br>
+            in building responsive, scalable, and user-friendly web applications.<br><br>
+
+            My core skills include
+            <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
+            <span>React</span>, <span>Python</span>, and <span>Django</span>.<br>
+            I enjoy creating clean UIs backed by robust server-side logic.<br><br>
+
+            I’ve worked on multiple real-world projects including portfolio websites,
+            form-based applications, and Django-powered<br> systems with authentication,<br>
+            CRUD operations, and database integration.<br><br>
+
+            I’m a continuous learner who loves solving problems, exploring new technologies,<br>
+            and building meaningful digital experiences.<br><br>
+
+            Currently, I’m seeking <strong>entry-level / junior full stack developer</strong><br>
+            roles or freelance opportunities where I can contribute, grow, and make an impact.<br>
+        </p>
+    </section>
+</div>
+<br>
+<!-- FOOTER -->
+<footer>
+    <a href="#top" class="top-btn">
+        <i class="fas fa-arrow-up"></i> Back to Top
+    </a>
+
+    <div class="contact-info">
+        📍 India | IST &nbsp; | &nbsp; 📧 mail4sandhya22@gmail.com
+    </div>
+</footer>
+<!-- ================= SCRIPT ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>

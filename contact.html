@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="top">
+
+<div class="main">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="Pic/Logo.png" class="logo" alt="Logo">
+
+        <!-- Right side controls -->
+        <div style="display:flex; align-items:center; gap:15px;">
+            
+   
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mywork.html">My Works</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+                         <!-- Dark mode toggle -->
+         <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle Dark Mode">
+         <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p style="text-align:center; margin: 10px 0 30px;">
+            Let’s connect! I’m open to freelance and full-time opportunities.
+        </p>
+
+        <!-- Resume -->
+        <div class="resume">
+            <a href="Sandhya_Resume (2).pdf"
+               class="resume-btn"
+               target="_blank">
+                <i class="fas fa-file-alt"></i> View Resume
+            </a>
+        </div>
+
+        <!-- Contact Icons -->
+        <div class="contact-icons">
+            <a href="mailto:mail4sandhya22@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/sandhyav22/" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sandhya-vadivel-939546b7/"
+               target="_blank"
+               title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#top" class="top-btn">
+        <i class="fas fa-arrow-up"></i> Back to Top
+    </a>
+
+    <div class="contact-info">
+        📍 India | IST &nbsp; | &nbsp; 📧 mail4sandhya22@gmail.com
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

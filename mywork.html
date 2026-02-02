@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works | Sandhya</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="top">
+
+<div class="main">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="Pic/Logo.png" class="logo" alt="Logo">
+
+        <!-- Right side controls -->
+        <div style="display:flex; align-items:center; gap:15px;">
+            
+   
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mywork.html" class="active">My Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+
+                         <!-- Dark mode toggle -->
+         <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle Dark Mode">
+         <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <section id="mywork">
+        <h2>My Projects</h2>
+        <p style="text-align:center; margin-bottom:30px;">
+            A collection of frontend and backend projects showcasing my skills.
+        </p>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card reveal">
+                <h3>Responsive Contact Us Form</h3>
+                <p>HTML • CSS • Responsive Design</p>
+
+                <a href="https://sandhyav22.github.io/P1/responsive%20contact%20us%20form-mp2-d4.html"
+                   target="_blank">
+                    <button>
+                        <i class="fas fa-globe"></i> Live Demo
+                    </button>
+                </a>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card reveal">
+                <h3>Mobile-Friendly Gadget Cards</h3>
+                <p>HTML • CSS • Flexbox</p>
+
+                <a href="https://sandhyav22.github.io/P2/Mobile-Friendly%20Gadget%20Cards-mp1-d4.html"
+                   target="_blank">
+                    <button>
+                        <i class="fas fa-globe"></i> Live Demo
+                    </button>
+                </a>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card reveal">
+                <h3>Online Event Registration</h3>
+                <p>HTML • CSS • Forms</p>
+
+                <a href="https://sandhyav22.github.io/P3/online%20event%20registration.html"
+                   target="_blank">
+                    <button>
+                        <i class="fas fa-globe"></i> Live Demo
+                    </button>
+                </a>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-card reveal">
+                <h3>Book Shop Page</h3>
+                <p>HTML • CSS • Layout Design</p>
+
+                <a href="https://sandhyav22.github.io/P4/Book%20Shop%20page.html"
+                   target="_blank">
+                    <button>
+                        <i class="fas fa-globe"></i> Live Demo
+                    </button>
+                </a>
+            </div>
+
+            <!-- PROJECT 5 : DJANGO -->
+            <div class="project-card reveal">
+                <h3>Online Learning Management System</h3>
+                <p>
+                    Python • Django • SQLite • HTML • CSS <br>
+                    User authentication, course management, admin panel
+                </p>
+
+                <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                    <a href="https://learning-gio8.onrender.com/"
+                       target="_blank">
+                        <button>
+                            <i class="fas fa-globe"></i> Live Demo
+                        </button>
+                    </a>
+
+                    <a href="https://github.com/sandhyav22/Learning "
+                       target="_blank">
+                        <button>
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+  <!-- PROJECT 6 : DJANGO -->
+
+
+                        <div class="project-card reveal">
+                <h3>E-Basket</h3>
+                <p>
+                    Python • Django • SQLite • HTML • CSS <br>
+                    User authentication, course management, admin panel
+                </p>
+
+                <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                    <a href="https://sandhyavivek.pythonanywhere.com/"
+                       target="_blank">
+                        <button>
+                            <i class="fas fa-globe"></i> Live Demo
+                        </button>
+                    </a>
+
+                    <a href="https://github.com/sandhyav22/ebasket "
+                       target="_blank">
+                        <button>
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+<!-- FOOTER -->
+<footer>
+    <a href="#top" class="top-btn">
+        <i class="fas fa-arrow-up"></i> Back to Top
+    </a>
+
+    <div class="contact-info">
+        📍 India | IST &nbsp; | &nbsp; 📧 mail4sandhya22@gmail.com
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

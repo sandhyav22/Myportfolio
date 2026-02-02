@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    
+}
+.main{
+    width: 100%;
+    background-image: url('Pic/bgw.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+.main::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.6);
+}
+.main > *{
+    position: relative;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+   margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.nav a{
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    transition: .3s ease;
+}
+
+.navbar ul li a:hover{
+    color: rgb(230,104,59);
+}
+
+/* Hamburger icon */
+.hamburger{
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        width: 220px;
+        padding: 20px;
+        display: none;
+        border-radius: 10px;
+    }
+
+    .navbar ul.show{
+        display: flex;
+    }
+
+    .navbar ul li a{
+        color: white;
+        padding: 10px 0;
+    }
+}
+.info{
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.info h1{
+    font-size: 60px;
+}
+
+.info h3{
+    font-size: 16px;
+    line-height: 1.6;
+}
+@media (max-width: 600px){
+    .info h1{
+        font-size: 36px;
+    }
+
+    .typing-name{
+        font-size: 22px;
+    }
+
+    .info h3{
+        font-size: 14px;
+    }
+}
+.info span{
+    color: rgb(230,104,59);
+}
+
+.info a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+.typing-name{
+  width: 0;
+  overflow:hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(230,104,59);
+  font-family: monospace;
+  font-size: 32px;
+  color: #222;
+  animation: typing 3s steps(10) forwards;
+  
+}
+@keyframes typing{
+  to{
+    width: 100%;
+  }
+}
+.designation{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes fadeInUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.info a:hover{
+    background: rgb(59,174,209);
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+p,ul{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  text-align: center;
+color: black;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.floating-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+@keyframes float{
+  0%,100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+}
+.typing{
+  width: 0;
+  overflow:hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(230,104,59);
+  animation: typing 4s steps(40) forwards;
+  font-family: monospace;
+  font-size: 18px;
+  
+}
+@keyframes typing{
+  to{
+    width: 100%;
+  }
+}
+
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color:  rgb(230,104,59);
+    
+      
+    }
+
+    .skill-card p {
+      color: black;
+      font-size: 14px;
+    }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px; 
+ 
+} 
+.project-card { 
+  background: #f4f4f4; 
+  padding: 20px; 
+  flex: 1 1 45%; 
+  text-align: center; 
+  border-radius: 8px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  background-color: rgb(250, 225, 160);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.project-card button{
+ background-color: rgb(59,174,209);
+ padding: 10px;
+  border-radius: 10px;
+}
+.project-card button:hover{
+  background-color: rgb(230,104,59);
+}
+.resume{
+   margin-top: 20%;
+    text-align: center;
+    justify-content: center;
+}
+.resume h3{
+     text-align: center;
+    justify-content: center; 
+}
+/* ===============================
+   FIXED FOOTER
+   =============================== */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    padding: 15px 20px;
+    z-index: 999;
+}
+
+/* Space so content doesn’t hide behind footer */
+body {
+    padding-bottom: 80px;
+}
+
+/* Dark mode footer */
+body.dark footer {
+    background: #0d0d0d;
+}
+
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+    .contact-icons a {
+      color:  rgb(230,104,59);
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: #ffffff;
+      transform: scale(1.2);
+    }
+
+    .contact-info {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00aaff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .resume-btn:hover {
+      background:  rgb(230,104,59);
+      transform: scale(1.05);
+    }
+
+    .top-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .top-btn:hover {
+      color:  rgb(230,104,59);
+    }
+
+    @media (max-width: 600px) {
+      .top-btn {
+        position: static;
+        display: block;
+        margin-top: 15px;
+      }
+    }
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+.about-text{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+/* Active nav link */
+.active{
+    color: rgb(230,104,59);
+}
+
+/* Mobile spacing */
+@media (max-width: 600px){
+    #about h2{
+        font-size: 28px;
+    }
+
+    .floating-pic{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+#contact h2{
+    margin-top: 40px;
+}
+
+/* Center resume button nicely */
+.resume{
+    margin: 30px 0;
+}
+
+/* Active menu highlight */
+.active{
+    color: rgb(230,104,59);
+}
+
+#mywork h2{
+    margin-top: 40px;
+}
+
+/* Project card text */
+.project-card p{
+    font-size: 14px;
+    margin: 10px 0 15px;
+}
+
+/* Button cleanup */
+.project-card button{
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Dark mode toggle button */
+.dark-toggle{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: darkslategray;
+}
+
+/* DARK MODE STYLES */
+body.dark{
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark .main {
+    background-image: none;              /* remove bg image */
+    background-color: #121212;            /* dark background */
+    color: #eaeaea;
+    min-height: 170vh;
+  
+}
+body.dark .navbar a,
+body.dark h1,
+body.dark h2,
+body.dark p{
+    color: #f5f5f5;
+}
+
+body.dark .skill-card,
+body.dark .project-card{
+    background: #1f1f1f;
+    color: #f5f5f5;
+}
+/* Dark mode toggle button */
+.dark-toggle {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark .dark-toggle {
+    color: #f5c542; /* sun color */
+}
+
+/* Icon animation */
+#theme-icon {
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg) scale(1.2);
+}
+
+body.dark button{
+    background: rgb(230,104,59);
+}
+
+
+/* ===============================
+   SKILL CARD HOVER ANIMATION
+   =============================== */
+
+.skill-card {
+    position: relative;
+    background: var(--card-bg, #ffffff);
+    border-radius: 14px;
+    padding: 22px;
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+    cursor: default;
+        transition: transform 0.15s ease-out;
+    will-change: transform;
+}
+
+/* Lift + Glow */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        0 0 20px rgba(0, 153, 255, 0.35);
+}
+
+/* Soft glowing border */
+.skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 153, 255, 0.6),
+        rgba(0, 255, 200, 0.6)
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: -1;
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+/* Icon animation */
+.skill-card i {
+    transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.skill-card:hover i {
+    transform: scale(1.2) rotate(-4deg);
+    color: #00bfff;
+}
+
+/* ===============================
+   DARK MODE SUPPORT
+   =============================== */
+
+body.dark .skill-card {
+    background: #1f1f1f;
+}
+
+body.dark .skill-card:hover {
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(0, 180, 255, 0.45);
+}

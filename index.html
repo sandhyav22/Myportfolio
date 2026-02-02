@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Sandhya</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="top">
+
+<div class="main">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="Pic/Logo.png" class="logo" alt="Logo">
+
+        <!-- Right side controls -->
+        <div style="display:flex; align-items:center; gap:15px;">
+            
+   
+
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="mywork.html">My Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+                 <!-- Dark mode toggle -->
+         <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle Dark Mode">
+         <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="info">
+
+            <h3 class="typing-name">
+                Hi, I'm <span>Sandhya</span>
+            </h3>
+
+            <h1 class="designation">
+                <span>P</span>ython <span>F</span>ull <span>S</span>tack <span>D</span>eveloper
+            </h1>
+
+            <h3>
+                Web Developer from Bangalore, India.<br>
+                I build modern, responsive, and user-friendly web applications<br>
+                using Python, Django, and frontend technologies.
+            </h3>
+
+            <a href="contact.html">Hire Me</a>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#top" class="top-btn">
+        <i class="fas fa-arrow-up"></i> Back to Top
+    </a>
+
+    <div class="contact-info">
+        📍 India | IST &nbsp; | &nbsp; 📧 mail4sandhya22@gmail.com
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
